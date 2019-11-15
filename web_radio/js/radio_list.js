@@ -41,7 +41,7 @@ $(function () {
 
             $('.favoriate').append(`
                 <div class="article" data-key="${vid}">
-                    <img src="${thumb}" alt="" class="thumb">
+                <iframe class="video w100" width="180" height="104" src="//www.youtube.com/embed/${vid}" frameborder="0"></iframe>
                     <div class="details">
                         <h4>${title}</h4>
                         <p>${desc}</p>

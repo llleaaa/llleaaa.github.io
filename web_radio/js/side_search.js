@@ -21,7 +21,6 @@ $(document).ready(function(){
                 var title = item.snippet.title.substring(0,40);
                 var videoid = item.id.videoId;
                 var desc = item.snippet.description.substring(0,40);
-                var thumb = item.snippet.thumbnails.medium.url;
                 $(".list").append(`
                     <div class="side_article" data-key="${videoid}">
                         <iframe class="video w100" width="304" height="171" src="//www.youtube.com/embed/${videoid}" frameborder="0"></iframe>
