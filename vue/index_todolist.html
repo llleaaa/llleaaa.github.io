@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDoList</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js'></script>
+    
+    <link rel="stylesheet" href="./css/todolist.css">
+</head>
+<body>
+    <div class="app">
+        <h2>ToDoList:</h2>
+        <input type="text" placeholder="請輸入待辦事項" 
+        v-model="newTodo"
+        @keyup.enter="addTodo">
+        
+        <div class="container">
+            
+            <ul v->
+                <li v-for="todo in todos">
+                    <span type="text">{{todo.text}}</span>
+                    <button @click="removeTodo(todo)">刪除</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+<script src="./js/todolist.js"></script>
+</body>
+</html>
